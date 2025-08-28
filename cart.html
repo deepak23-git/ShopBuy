@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justbuy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+
+    <!--Navbar Start-->
+
+    <div class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a href="index.html" class="navbar-brand fs-2 ms-auto me-auto">
+
+                <i class="fa-solid fa-shop"></i>
+                Just Buy
+
+            </a>
+            <div class="div d-flex gap-2">
+                <a href="search.html" class="nav-link active d-lg-none"> <i
+                        class="fa-solid fa-magnifying-glass text-light"></i>
+                </a>
+
+                <a href="cart.html" class="nav-link"> <i class="fa-solid fa-cart-plus text-light d-lg-none mx-2"></i>
+                </a>
+
+            </div>
+
+            <div class="navbar-collapse collapse ms-auto" id="mynavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item dropdown"><a href="" class="nav-link dropdown-toggle"
+                            data-bs-toggle="dropdown">Collections</a>
+                        <ul class="dropdown-menu bg-dark">
+                            <li><a href="collection-shirts.html" class="dropdown-item text-light">Shirt</a></li>
+                            <li><a href="collection-pants.html" class="dropdown-item text-light">Pants</a></li>
+                            <li><a href="collection-watch.html" class="dropdown-item text-light">Watch</a></li>
+                            <li><a href="collection-shoes.html" class="dropdown-item text-light">Shoes</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item active d-none d-lg-block">
+                        <a href="search.html" class="nav-link active d-md-sm-none"> <i
+                                class="fa-solid fa-magnifying-glass text-light"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Navbar End-->
+
+    <div class="container mt-5" id="cartItems">
+    </div>
+    <div class="col-lg-5 col-md-12 col-12 px-5 mt-3 price_deatail" id="price_deatail">
+        <h3 class="text-center">Price Details</h3>
+        <hr>
+        <div class="div d-flex my-4">
+            <h5>Price Amount</h5>
+            <h6 class="ms-auto" id="act">0</h6>
+        </div>
+        <div class="div d-flex my-4">
+            <h5>Discount Amount</h5>
+            <h6 class="ms-auto">0</h6>
+        </div>
+        <div class="div d-flex my-4">
+            <h5>Delivery Charge</h5>
+            <h6 class="ms-auto">40</h6>
+        </div>
+        <hr>
+        <div class="div d-flex my-4">
+            <h5>Total</h5>
+            <h6 class="ms-auto" id="totalAmount"></h6>
+        </div>
+        <div class="container places" id="order_place">
+            <div class="row bg-light mt-lg-2 place ">
+                <button class="btn w-50 bg-dark text-light remove" id="checkoutBtn">Place Order</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="orderSummaryModal" tabindex="-1" aria-labelledby="orderSummaryModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="orderSummaryModalLabel">Order Summary</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Your Order:</h6>
+                    <div id="orderSummaryItems">
+                        <!-- Dynamic order items will be listed here -->
+                    </div>
+                    <h5>Total Price: ₹<span id="orderSummaryTotal"></span></h5>
+                    <h6>Customer Information:</h6>
+                    <p id="customerName"></p>
+                    <p id="customerEmail"></p>
+                    <p id="customerAddress"></p>
+                    <button class="btn btn-success" data-bs-dismiss="modal" id="Confirm">Confirm Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#">Instagram</a> |
+                    <a href="#">Facebook</a> |
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 YourStore. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- javascript bootstrtap file -->
+
+
+    <script src="cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- javascript bootstrtap file -->
+
+</body>
+
+</html>

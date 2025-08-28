@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row carts">
+            <div class="col-lg-7 col-lg-7 col-12">
+                <div class="items" id="items">
+                    <div class="row bg-light cart-item mb-2" id="p1">
+                        <div class="col-5 bor">
+                            <img style="width: 100%;" src="img/products/n8.jpg" alt="">
+                        </div>
+                        <div class="col-6 d-flex flex-column justify-content-center ms-2 my-2">
+                            <div class="row mt-lg-2">
+                                <h3>Black Shirt For Men</h3>
+                            </div>
+                            <div class="row mt-lg-2">
+                                <h6 style="word-spacing: 5px;"><del>&#8377;999</del> &#8377;499</h6>
+                            </div>
+                            <div class="row mt-lg-2">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <button class="btn btn-sm btn-outline-secondary"
+                                        onclick="decreaseQty('${item.name}')">-</button>
+                                    <span>2</span>
+                                    <button class="btn btn-sm btn-outline-secondary"
+                                        onclick="increaseQty('${item.name}')">+</button>
+                                </div>
+                            </div>
+                            <div class="row w-lg-50 mt-lg-3">
+                                <button class="btn w-50 bg-dark text-light remove" onclick="removeitem(p1)"><i
+                                        class="fa-regular fa-trash-can me-1"></i>
+                                    Remove</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row bg-light mt-lg-2 place sticky-bottom">
+                    <button class="btn w-25 bg-dark text-light remove">Place Order</button>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-12 col-12 price_deatail px-5 mt-3" id="price_detail">
+                <h3 class="text-center">Price Details</h3>
+                <hr>
+                <div class="div d-flex my-4">
+                    <h5>Price Amount</h5>
+                    <h6 class="ms-auto">0</h6>
+                </div>
+                <div class="div d-flex my-4">
+                    <h5>Discount Amount</h5>
+                    <h6 class="ms-auto">0</h6>
+                </div>
+                <div class="div d-flex my-4">
+                    <h5>Delivery Charge</h5>
+                    <h6 class="ms-auto">40</h6>
+                </div>
+                <hr>
+                <div class="div d-flex my-4">
+                    <h5>Total</h5>
+                    <h6 class="ms-auto" id="total">0</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

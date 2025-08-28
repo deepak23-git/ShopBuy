@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(60, 60, 60, 0.2);
+}
+.shirts-container{
+    text-align: center;
+    border: 2px solid black;
+    font-size: 2vw;
+    box-shadow: 2px 5px 10px;
+    border-radius: 20px;
+}
+.shirts-container img{
+    border-radius: 20px;
+}
+.shirts-container a{
+    margin-left: 15%;
+    font-size: 2vw;
+    padding: 2% 1%;
+    width: 70% !important;
+    margin-bottom: 3%;
+}
+.row{
+    --bs-gutter-y: 1.5rem !important;
+}
+
+@media(max-width : 1024px){
+    .shirts-container h3{
+        font-size: 2vw;
+    }
+}
+
+@media(max-width : 768px){
+    .shirts-container h3,p{
+        font-size: 3vw;
+    }
+    .shirts-container a{
+        font-size: medium;
+    }
+}
+
+@media(max-width : 425px){
+    .shirts-container h3,p{
+        font-size: 4vw;
+    }
+    .shirts-container a{
+        font-size: medium;
+    }
+}

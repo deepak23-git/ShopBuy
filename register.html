@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justbuy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="text-center text-light bg-dark py-3">Justbuy</h1>
+
+    <!-- <div class="card my-5">
+        <h3 class="text-center my-3">Welcome</h3>
+        <div class="container">
+            <form action="">
+                <div class="my-3">
+                    <label for="Feedback" class="form-label">First Name :</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="my-3">
+                    <label for="Feedback" class="form-label">Last Name :</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="my-3">
+                    <label for="Feedback" class="form-label">E-Mail :</label>
+                    <input type="email" class="form-control" placeholder="Example@gmail.com">
+                </div>
+                <div class="my-3">
+                    <label for="Feedback" class="form-label">Phone No :</label>
+                    <input type="tel" class="form-control">
+                </div>
+                <div class="my-3">
+                    <label for="Feedback" class="form-label">Password :</label>
+                    <input type="password" class="form-control">
+                </div>
+                <div class="my-3">
+                    <label for="Feedback" class="form-label">Confirm Password :</label>
+                    <input type="password" class="form-control">
+                </div>
+                <div class="feed my-3">
+                    <a href="index.html" class="btn text-dark mx-1 cancel">Cancel</a>
+                    <a href="" class="btn bg-dark text-light mx-1">Log-in</a>
+                </div>
+            </form>
+        </div>
+    </div> -->
+
+    <div id="accordian">
+
+        <div class="card">
+            <div class="card-header">
+                <a href="#collapsetwo" class="btn" data-bs-toggle="collapse"><input type="checkbox" name="Sign-in"
+                        id="Sign-in"> <label for="Sign-in">I already have an account</label></a>
+            </div>
+            <div id="collapsetwo" class="collapse show" data-bs-parent="#accordian">
+                <div class="card-body">
+                    <h3 class="text-center my-3">Welcome</h3>
+                    <div class="container">
+                        <form action="">
+                            <div class="my-3">
+                                <label for="Feedback" class="form-label">Enter Your E-Mail :</label>
+                                <input type="text" class="form-control" placeholder="Example@gmail.com">
+                            </div>
+                            <div class="my-3">
+                                <label for="Feedback" class="form-label">Enter Your Password :</label>
+                                <input type="password" class="form-control" placeholder="Enter Your Password">
+                            </div>
+                            <div class="feed my-3">
+                                <a href="index.html" class="btn bg-dark text-light mx-1 w-20 Log-in mt-2">Log-in</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <a href="#collapseone" class="btn" data-bs-toggle="collapse"><input type="checkbox" name="Sign-up"
+                        id="Sign-up"> <label for="Sign-up">Create New Account</label></a>
+            </div>
+            <div id="collapseone" class="collapse" data-bs-parent="#accordian">
+                <div class="card-body">
+                    <h3 class="text-center my-3">Create an account</h3>
+                    <div class="container">
+                        <form action="">
+                            <div class="my-3">
+                                <label for="Feedback" class="form-label">First Name :</label>
+                                <input type="text" class="form-control" placeholder="Enter Your First Name">
+                            </div>
+                            <div class="my-3">
+                                <label for="Feedback" class="form-label">Last Name :</label>
+                                <input type="text" class="form-control" placeholder="Enter Your Last Name">
+                            </div>
+                            <div class="my-3">
+                                <label for="Feedback" class="form-label">E-Mail :</label>
+                                <input type="email" class="form-control" placeholder="Example@gmail.com">
+                            </div>
+                            <div class="my-3">
+                                <label for="Feedback" class="form-label">Phone No :</label>
+                                <input type="tel" class="form-control" placeholder="Enter Your Phone Number">
+                            </div>
+                            <div class="my-3">
+                                <label for="Feedback" class="form-label">Password :</label>
+                                <input type="password" class="form-control" placeholder="Enter Password">
+                            </div>
+                            <div class="my-3">
+                                <label for="Feedback" class="form-label">Confirm Password :</label>
+                                <input type="password" class="form-control" placeholder="Enter Confirm Password">
+                            </div>
+                            <div class="feed my-3">
+                                <a href="index.html" class="btn bg-dark text-light mx-1 Log-in mt-2">Log-in</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,245 @@
+[
+    {
+        "id": "p1",
+        "name": "Black Shirt",
+        "img": "./img/products/n8.jpg",
+        "price": 499,
+        "act": 999,
+        "dis": 500
+    },
+    {
+        "id": "p2",
+        "name": "Printed Shirt",
+        "img": "./img/products/f1.jpg",
+        "price": 499,
+        "act": 999,
+        "dis": 500
+    },
+    {
+        "id": "p3",
+        "name": "Formal Blue Shirt",
+        "img": "./img/products/n1.jpg",
+        "price": 499,
+        "act": 999,
+        "dis": 500
+    },
+    {
+        "id": "p4",
+        "name": "Double Pocket Shirt",
+        "img": "./img/products/n7.jpg",
+        "price": 499,
+        "act": 999,
+        "dis": 500
+    },
+    {
+        "id": "p5",
+        "name": "White Shirt",
+        "img": "./img/products/n3.jpg",
+        "price": 499,
+        "act": 999,
+        "dis": 500
+    },
+    {
+        "id": "p6",
+        "name": "Printed Flower Shirt",
+        "img": "./img/products/f2.jpg",
+        "price": 499,
+        "act": 999,
+        "dis": 500
+    },
+    {
+        "id": "p7",
+        "name": "Printed Shirt",
+        "img": "./img/products/n4.jpg",
+        "price": 499,
+        "act": 999,
+        "dis": 500
+    },
+    {
+        "id": "p8",
+        "name": "Checked Shirt",
+        "img": "./img/products/n2.jpg",
+        "price": 499,
+        "act": 999,
+        "dis": 500
+    },
+    {
+        "id": "p9",
+        "name": "Over Sized Pant",
+        "img": "./img/products/f7.jpg",
+        "price": 499,
+        "act": 999,
+        "dis": 500
+    },
+    {
+        "id": "p10",
+        "name": "Half Trouser",
+        "img": "./img/products/n6.jpg",
+        "price": 499,
+        "act": 999,
+        "dis": 500
+    },
+    {
+        "id": "p11",
+        "name": "Slim Fit Casuals",
+        "img": "./img/pants/p3.jfif",
+        "price": 499,
+        "act": 999,
+        "dis": 500
+    },
+    {
+        "id": "p12",
+        "name": "Slim Fit Casuals Black",
+        "img": "./img/pants/p2.jfif",
+        "price": 499,
+        "act": 999,
+        "dis": 500
+    },
+    {
+        "id": "p13",
+        "name": "Casual Olive Green",
+        "img": "./img/pants/p4.jfif",
+        "price": 499,
+        "act": 999,
+        "dis": 500
+    },
+    {
+        "id": "p14",
+        "name": "Baggy Carogo Pant",
+        "img": "./img/pants/p6.jfif",
+        "price": 499,
+        "act": 999,
+        "dis": 500
+    },
+    {
+        "id": "p15",
+        "name": "Jogers",
+        "img": "./img/pants/p7.jfif",
+        "price": 499,
+        "act": 999,
+        "dis": 500
+    },
+    {
+        "id": "p16",
+        "name": "Jeans Pant",
+        "img": "./img/pants/p8.jfif",
+        "price": 499,
+        "act": 999,
+        "dis": 500
+    },
+    {
+        "id": "p17",
+        "name": "Brown Leather Watch",
+        "img": "./img/watchs/w1.jpg",
+        "price": 499,
+        "act": 999,
+        "dis": 500
+    },
+    {
+        "id": "p18",
+        "name": "Mechanical Watch",
+        "img": "./img/watchs/w2.jpg",
+        "price": 499,
+        "act": 999,
+        "dis": 500
+    },
+    {
+        "id": "p19",
+        "name": "Clasical Watch",
+        "img": "./img/watchs/w3.jpg",
+        "price": 499,
+        "act": 999,
+        "dis": 500
+    },
+    {
+        "id": "p20",
+        "name": "Leather Watch",
+        "img": "./img/watchs/w4.jpg",
+        "price": 499,
+        "act": 999
+    },
+    {
+        "id": "p21",
+        "name": "Analog Watch",
+        "img": "./img/watchs/w5.jpg",
+        "price": 499,
+        "act": 999
+    },
+    {
+        "id": "p22",
+        "name": "Casio Watch",
+        "img": "./img/watchs/w6.jpg",
+        "price": 399,
+        "act": 449
+    },
+    {
+        "id": "p23",
+        "name": "Titan Watch",
+        "img": "./img/watchs/1728373423978lkfxuozn.png",
+        "price": 499,
+        "act": 849
+    },
+    {
+        "id": "p24",
+        "name": "Timex Watch",
+        "img": "./img/watchs/1728373428937nn0xef4r.png",
+        "price": 299,
+        "act": 499
+    },
+    {
+        "id": "p25",
+        "name": "Sport Shoes",
+        "img": "./img/shoes/s1.jfif",
+        "price": 849,
+        "act": 1099
+    },
+    {
+        "id": "p26",
+        "name": "Casual White Shoe",
+        "img": "./img/shoes/s2.jfif",
+        "price": 499,
+        "act": 599
+    },
+    {
+        "id": "p27",
+        "name": "Walking Sneakers",
+        "img": "./img/shoes/s3.jfif",
+        "price": 499,
+        "act": 699
+    },
+    {
+        "id": "p28",
+        "name": "Sports Nike Shoe",
+        "img": "./img/shoes/s4.jfif",
+        "price": 499,
+        "act": 899
+    },
+    {
+        "id": "p29",
+        "name": "Casual Shoe",
+        "img": "./img/shoes/s11.jfif",
+        "price": 549,
+        "act": 999
+    },
+    {
+        "id": "p30",
+        "name": "Formal Brown Shoe",
+        "img": "./img/shoes/s6.jfif",
+        "price": 499,
+        "act": 999
+    },
+    {
+        "id": "p31",
+        "name": "White Shoe",
+        "img": "./img/shoes/s7.jfif",
+        "price": 499,
+        "act": 1199
+    },
+    {
+        "id": "p32",
+        "name": "Vintage White Shoe",
+        "img": "./img/shoes/s8.jfif",
+        "price": 649,
+        "act": 1299
+    }
+]
